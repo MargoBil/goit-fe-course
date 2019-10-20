@@ -95,6 +95,7 @@ img {
   margin-left: 0px;
   height: 480px;
   width: 421px;
+  vertical-align: top;
 }
 
 button {
