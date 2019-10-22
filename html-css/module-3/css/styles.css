@@ -33,7 +33,7 @@ a:hover {
 li {
   display: inline-block;
   text-align: center;
-  margin: 3rem;
+  margin: 0 3rem;
 }
 
 h2 {
@@ -115,6 +115,5 @@ button {
 }
 
 .card-card-more {
-  margin-right: 526px;
-  margin-left: 505px;
+  text-align: center
 }
