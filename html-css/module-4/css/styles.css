@@ -45,10 +45,6 @@ html {
   color: rgb(26, 188, 156);
 }
 
-.menu-link:hover {
-  color: rgb(26, 188, 156);
-}
-
 .menu {
   height: 100px;
   overflow: hidden;
@@ -98,7 +94,7 @@ h2::after {
   float: left;
   height: 322px;
   width: 255px;
-  position: relative;
+  cursor: pointer;
   height: auto;
   overflow: hidden;
   margin-top: 30px;
@@ -114,6 +110,7 @@ h2::after {
   margin-bottom: 11px;
   margin-left: 11px;
   float: left;
+  font-weight: bold;
 }
 
 .cost {
@@ -129,25 +126,28 @@ h2::after {
   padding-bottom: 11px;
   float: right;
   margin: 0 auto;
+  transition-duration: 0.3s;
 }
 
 .product-name {
-  height: auto;
   overflow: hidden;
   background: linear-gradient(to right, #323232 80%, #8c8c8c 20%);
-  height: 40px;
+  height: calc(322px - 282px);
+  line-height: calc(322px - 282px);
   width: 255px;
 }
 
 .product-image {
   background-color: rgb(233, 240, 253);
   height: 282px;
-  width: 255px;
-  display: table-cell;
   text-align: center;
-  vertical-align: middle;
+  line-height: 282px;
+  overflow: hidden;
 }
-
+.image {
+ vertical-align: middle;
+ max-width: 100%;
+}
 .product-item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
@@ -200,7 +200,7 @@ h2::after {
   margin-bottom: 0px;
 }
 
-.news-cards-clearfix::after {
+.clearfix::after {
   content: '';
   display: block;
   clear: both;
@@ -227,4 +227,8 @@ h2::after {
   padding-top: 10px;
   padding-right: 48px;
   padding-left: 48px;
+}
+button:hover {
+  box-shadow: 2px 2px 2px 2px rgb(180, 180, 180);
+  cursor: pointer;
 }
