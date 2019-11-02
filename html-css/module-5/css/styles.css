@@ -10,8 +10,9 @@ html {
 
 .container {
   width: 1600px;
-  height: 100% background-color: rgb(233, 240, 253);
-  margin: auto;
+  height: 100%;
+  background-color: rgb(233, 240, 253);
+  margin: 0px auto;
 }
 
 header {
