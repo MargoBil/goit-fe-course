@@ -239,36 +239,38 @@ h2::after {
 .name {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  line-height: 18px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  margin-top: 11px;
-  margin-bottom: 11px;
-  margin-left: 11px;
   float: left;
   font-weight: bold;
+  height: calc(322px - 288px);
+  line-height: calc(322px - 288px);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 11px;
 }
 
 .cost {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  line-height: 19px;
+ 
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
   width: 55px;
   color: rgb(255, 255, 255);
-  padding-top: 11px;
-  padding-bottom: 11px;
   float: right;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: calc(322px - 288px);
+  line-height: calc(322px - 288px);
 }
 
 .product-name {
   overflow: hidden;
   background: linear-gradient(to right, #323232 80%, #8c8c8c 20%);
-  height: calc(322px - 282px);
-  line-height: calc(322px - 282px);
+  height: calc(322px - 288px);
+  line-height: calc(322px - 288px);
   width: 255px;
 }
 
