@@ -32,32 +32,34 @@
   line-height: 36px;
   color: #95e1d3;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .menu-item {
-  list-style-type: none;
+  position: relative;
 }
 
 .menu-link {
   text-decoration: none;
   color: #95e1d3;
   font-weight: bold;
-  transition: 0.2s linear;
+  transition: 0.2s;
 }
 
 .menu-link::after {
-  display: block;
   content: '';
   height: 3px;
-  width: 100%;
   background-color: #f38181;
-  opacity: 0;
-  transition: 0.2 linear;
+  transition: width 0.5s, left 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
 }
 
-.menu-link:hover:after,
-.menu-link:focus:after {
-  opacity: 1;
+.menu-link:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .menu-link:hover,
@@ -110,7 +112,7 @@
   color: #333333;
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 1;
   padding-bottom: 18px;
 }
 
@@ -235,8 +237,12 @@
   transform: translate(-11px, -11px);
 }
 
-.team-card:hover .buttons-icons-box {
+.team-card:hover {
   opacity: 0.9;
+}
+
+.team-card:hover .buttons-icons-box {
+  opacity: 1;
 }
 
 .image-photo {
@@ -267,13 +273,15 @@
   height: 54px;
   border: 1px solid #f38181;
   border-style: solid;
-  background-color: #fce38a;
+  background-color: rgba(252, 227, 138, 0.6);
   cursor: pointer;
 }
 
 .icon:hover,
 .icon:focus {
   background-color: #95e1d3;
+  opacity: 1;
+
 }
 
 .icon:not(:nth-child(4)) {
@@ -290,6 +298,10 @@
 .buttons-icons-box {
   display: flex;
   font-size: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
 }
 
