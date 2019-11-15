@@ -235,12 +235,12 @@ textarea::placeholder {
   margin: 0 auto;
 }
 
-input[name=form-item]:not(:nth-last-child(1)):invalid,
-textarea:invalid {
+input[name=form-item]:not(:nth-last-child(1)):focus:invalid,
+textarea:focus:invalid {
   outline: 3px solid #e61822;
 }
 
-input[name=form-item]:not(:nth-last-child(1)):valid,
-textarea:valid {
+input[name=form-item]:not(:nth-last-child(1)):focus:valid,
+textarea:focus:valid {
   outline: 3px solid #2aa35e;
 }
