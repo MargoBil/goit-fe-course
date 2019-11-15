@@ -178,7 +178,7 @@
 }
 
 input[name=form-item] {
-  width: 28.5rem;
+  width: 456px;
   border-radius: 3px 3px 3px 3px;
   border-style: none;
 }
@@ -190,11 +190,11 @@ input[name=form-item]:not(:nth-child(3)) {
 .contacts-box {
   display: flex;
   flex-wrap: wrap;
+  width: 456px;
 }
 
 .form-message {
-  width: 28.5rem;
-  height: 100%;
+  width: 456px;
   padding: 0;
   border-radius: 3px 3px 3px 3px;
   border-style: none;
