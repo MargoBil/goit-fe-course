@@ -207,6 +207,7 @@ input:not(:nth-child(3)) {
 
 .form-message {
   width: 456px;
+  box-sizing: border-box;
   border-radius: 3px 3px 3px 3px;
   border-style: none;
 }
