@@ -205,9 +205,8 @@ input:not(:nth-child(3)) {
   width: 456px;
 }
 
-.message {
+.form-message {
   width: 456px;
-  padding: 0;
   border-radius: 3px 3px 3px 3px;
   border-style: none;
 }
