@@ -221,9 +221,6 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 
-/* textarea::placeholder {
-  padding-top: 1.2rem;
-} */
 
 .form-send {
   text-decoration: none;
