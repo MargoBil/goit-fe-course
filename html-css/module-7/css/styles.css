@@ -35,12 +35,14 @@
     url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff');
 }
 
-/* noto-serif-italic */
+/* noto-serif-italic - latin */
 @font-face {
   font-family: 'Noto Serif';
   font-style: italic;
   font-weight: 400;
-  src: url(../fonts/NotoSerif-Italic.ttf) format(truetype), url(../fonts/NotoSerif-Regular.ttf) format(truetype);
+  src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
+    url('../fonts/noto-serif-v8-latin-italic.woff2') format('woff2'),
+    url('../fonts/noto-serif-v8-latin-italic.woff') format('woff');
 }
 
 * {
@@ -177,13 +179,19 @@
   min-height: 13.3rem;
 }
 
-input[name=form-item] {
+input {
   width: 456px;
   border-radius: 3px 3px 3px 3px;
   border-style: none;
 }
 
-input[name=form-item]:not(:nth-child(3)) {
+textarea,
+input {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+input:not(:nth-child(3)) {
   margin-bottom: 1.8rem;
 }
 
@@ -193,7 +201,7 @@ input[name=form-item]:not(:nth-child(3)) {
   width: 456px;
 }
 
-.form-message {
+.message {
   width: 456px;
   padding: 0;
   border-radius: 3px 3px 3px 3px;
@@ -235,12 +243,12 @@ textarea::placeholder {
   margin: 0 auto;
 }
 
-input[name=form-item]:not(:nth-last-child(1)):focus:invalid,
+input:not(:nth-last-child(1)):focus:invalid,
 textarea:focus:invalid {
   outline: 3px solid #e61822;
 }
 
-input[name=form-item]:not(:nth-last-child(1)):focus:valid,
+input:not(:nth-last-child(1)):focus:valid,
 textarea:focus:valid {
   outline: 3px solid #2aa35e;
 }
