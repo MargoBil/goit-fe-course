@@ -187,8 +187,12 @@ input {
 
 textarea,
 input {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+textarea {
+  padding-top: 15px;
 }
 
 input:not(:nth-child(3)) {
@@ -215,12 +219,11 @@ textarea::placeholder {
   color: #bbbbbb;
   font-size: 14px;
   text-transform: uppercase;
-  padding-left: 1.2rem;
 }
 
-textarea::placeholder {
+/* textarea::placeholder {
   padding-top: 1.2rem;
-}
+} */
 
 .form-send {
   text-decoration: none;
