@@ -324,8 +324,7 @@ header {
 
 @media screen and (min-width:943px) {
   .container {
-    min-width: 943px;
-    max-width: 1440px;
+    max-width: 943px;
   }
 
   .box-menu {
